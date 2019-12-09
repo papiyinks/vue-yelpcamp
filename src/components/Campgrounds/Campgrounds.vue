@@ -47,7 +47,9 @@ export default {
       .then(response => {
         this.campgrounds = response.data.campgrounds;
       })
-      .catch(error => console.log(error));
+      .catch(error => {
+        console.log(error);
+      });
   },
   computed: {
     auth() {

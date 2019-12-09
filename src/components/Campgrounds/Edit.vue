@@ -50,7 +50,9 @@ export default {
         this.image = response.data.campground.image;
         this.description = response.data.campground.description;
       })
-      .catch(error => console.log(error));
+      .catch(error => {
+        console.log(error);
+      });
   },
   methods: {
     onSubmit() {
@@ -67,7 +69,9 @@ export default {
           },
         })
         .then(() => this.$router.push(`/campground/${this.$route.params.id}`))
-        .catch(error => console.log(error));
+        .catch(error => {
+          console.log(error);
+        });
     },
   },
 };

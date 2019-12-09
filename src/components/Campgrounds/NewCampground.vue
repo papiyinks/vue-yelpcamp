@@ -58,7 +58,9 @@ export default {
         .then(res => {
           this.$router.push('/campgrounds');
         })
-        .catch(error => console.log(error));
+        .catch(error => {
+          console.log(error);
+        });
     },
   },
 };

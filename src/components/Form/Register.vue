@@ -55,7 +55,9 @@ export default {
         .then(res => {
           this.$router.push('/verify');
         })
-        .catch(error => console.log(error));
+        .catch(error => {
+          console.log(error);
+        });
     },
   },
   validations: {

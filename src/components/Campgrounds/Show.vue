@@ -52,7 +52,9 @@ export default {
         this.id = response.data.campground.id;
         this.owner = response.data.campground.owner;
       })
-      .catch(error => console.log(error));
+      .catch(error => {
+        console.log(error);
+      });
   },
   methods: {
     deleted() {
@@ -65,7 +67,9 @@ export default {
         .then(res => {
           this.$router.push('/campgrounds');
         })
-        .catch(error => console.log(error));
+        .catch(error => {
+          console.log(error);
+        });
     },
   },
 };
